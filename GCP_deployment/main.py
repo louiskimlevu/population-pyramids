@@ -19,7 +19,7 @@ def startup():
 	global pop_df, location_list
 
 	# load and prepare the data
-	pop_df = pd.read_csv(BASE_DIR + '/WPP2019_PopulationByAgeSex.csv')
+	pop_df = pd.read_csv(BASE_DIR + '/population_short.csv')
 	location_list = sorted(list(set(pop_df['Location'])))
 
 def get_population_pyramid(country, year):
